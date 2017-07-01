@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RelativeDefault">
+
+    <ListView
+        android:id="@+id/list_product"
+        style="@style/ListView">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        style="@style/RelativeDefault">
+
+        <ImageView
+            android:id="@+id/foto_empty_view"
+            style="@style/ImagenEmptyView" />
+
+        <TextView
+            android:id="@+id/texto_empty_view"
+            style="@style/TextoEmptyView" />
+
+        <ImageView style="@style/IconoProductoNuevoEmptyView" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/EstiloFab"
+        app:fabSize="normal"/>
+
+</RelativeLayout>

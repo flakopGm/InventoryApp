@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joni.inventoryapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_almacen"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_almacen"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EdicionProductoActivity"
+            android:label="@string/titulo_activity_producto_nuevo"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <provider
+            android:name=".datos.ProductProvider"
+            android:authorities="com.example.joni.inventoryapp"/>
+        <activity
+            android:name=".GestionProductoActivity"
+            android:label="@string/titulo_activity_product_management"
+            android:parentActivityName=".MainActivity"/>
+    </application>
+
+</manifest>

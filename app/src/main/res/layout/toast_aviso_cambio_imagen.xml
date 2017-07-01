@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contenedor_toast"
+    style="@style/RelativeDefault">
+
+
+    <TextView
+        android:id="@+id/infoTextToast"
+        style="@style/ToastPersonalizado" />
+
+    <ImageView style="@style/ImagenToastPersonalizado"></ImageView>
+
+</RelativeLayout>
+
+
+

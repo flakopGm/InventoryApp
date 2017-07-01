@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    style="@style/ScrollView">
+
+    <RelativeLayout style="@style/RelativeDefault">
+
+        <TextView
+            android:id="@+id/instrucciones_img"
+            style="@style/TextoInfoFoto" />
+
+        <ImageView
+            android:id="@+id/imagen_producto"
+            style="@style/ImagenAddProducto" />
+
+        <TextView
+            android:id="@+id/text_image_product"
+            style="@style/TextoImagenProducto" />
+
+        <TextView
+            android:id="@+id/nombre_producto_tv"
+            style="@style/NombreProducto" />
+
+        <EditText
+            android:id="@+id/textview_product_name"
+            style="@style/EditTextNombre" />
+
+        <TextView
+            android:id="@+id/precio_producto"
+            style="@style/PrecioProducto" />
+
+        <EditText
+            android:id="@+id/textview_text_price"
+            style="@style/EditTextPrecio" />
+
+        <TextView
+            android:id="@+id/proveedor"
+            style="@style/Proveedor" />
+
+        <EditText
+            android:id="@+id/textview_text_provider"
+            style="@style/EditTextProveedor" />
+
+        <TextView
+            android:id="@+id/cantidad_producto"
+            style="@style/Cantidad" />
+
+        <EditText
+            android:id="@+id/quantity"
+            style="@style/EditTextCantidad" />
+
+    </RelativeLayout>
+
+</ScrollView>
