@@ -12,6 +12,9 @@
         <ImageView
             android:id="@+id/imagen_producto"
             style="@style/ImagenAddProducto" />
+        <View
+            android:id="@+id/view_separador"
+            style="@style/ViewFotoEdicionProduct"/>
 
         <TextView
             android:id="@+id/text_image_product"

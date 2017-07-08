@@ -103,11 +103,19 @@
     <!-- Estilo para la imagen de la foto. -->
     <style name="ImagenAddProducto">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">180dp</item>
+        <item name="android:minHeight">220dp</item>
+        <item name="android:layout_height">220dp</item>
         <item name="android:layout_below">@id/instrucciones_img</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:src">@drawable/new_image</item>
         <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="ViewFotoEdicionProduct">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_below">@id/imagen_producto</item>
     </style>
 
     <!-- Estilo para el texto inferior de la foto del producto. -->
@@ -378,7 +386,7 @@
     <style name="ImagenProductoListView">
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">130dp</item>
-        <item name="android:scaleType">centerCrop</item>
+        <item name="android:scaleType">fitXY</item>
         <item name="android:layout_gravity">start</item>
         <item name="android:background">@color/colorPrimary</item>
     </style>

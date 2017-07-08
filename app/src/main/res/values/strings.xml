@@ -4,6 +4,7 @@
     <string name="rellenado">Faltan campos por rellenar antes de guardar</string>
     <string name="error_guardar_modificado">Error guardando los cambios</string>
     <string name="modificado">Producto modificado correctamente</string>
+    <string name="agregado">Producto añadido correctamente</string>
     <string name="titulo_activity_producto_nuevo">Producto Nuevo</string>
     <string name="titulo_activity_modificar_producto">Modificar Datos Producto</string>
     <string name="descartar_cambios_dialog_msg">Descartar cambios</string>

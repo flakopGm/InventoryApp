@@ -93,6 +93,7 @@ public class EdicionProductoActivity extends AppCompatActivity
         editTextQuantity = (EditText) findViewById(R.id.quantity);
         TextView textoFoto = (TextView) findViewById(R.id.text_image_product);
         final TextView instrucionesFoto = (TextView) findViewById(R.id.instrucciones_img);
+        View viewSeparadorImagen = (View)findViewById(R.id.view_separador);
 
         // Mantenemos el scrollview en la posición superior.
         scrollview.fullScroll(ScrollView.FOCUS_UP);
@@ -133,6 +134,7 @@ public class EdicionProductoActivity extends AppCompatActivity
             // Inavilitamos la opción de borrar del menú de opciones ya que es un producto nuevo y
             // no se a creado aún, por lo tanto no se puede borrar.
             textoFoto.setVisibility(View.VISIBLE);
+            viewSeparadorImagen.setVisibility(View.GONE);
             invalidateOptionsMenu();
 
         } else {
@@ -141,8 +143,8 @@ public class EdicionProductoActivity extends AppCompatActivity
             setTitle(getString(R.string.titulo_activity_modificar_producto));
             textoFoto.setVisibility(View.GONE);
             instrucionesFoto.setVisibility(View.GONE);
-            imageViewP.setScaleType(ImageView.ScaleType.FIT_XY);
             editTextNameP.setHintTextColor(getResources().getColor(R.color.colorHint));
+            viewSeparadorImagen.setVisibility(View.VISIBLE);
             // Inicializar un cargador para leer los datos del producto de la base de datos y
             // mostrar los valores actuales en el editor
             getLoaderManager().initLoader(EXISTING_PRODUCT_LOADER, null, this);
@@ -333,7 +335,7 @@ public class EdicionProductoActivity extends AppCompatActivity
             if (insertedRow == null) {
                 Toast.makeText(this, R.string.error_guardar_modificado, Toast.LENGTH_LONG).show();
             } else {
-                Toast.makeText(this, R.string.modificado, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.agregado, Toast.LENGTH_LONG).show();
             }
         } else {
             // De lo contrario procederemos a actualizar e informar de lo sucedido.

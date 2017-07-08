@@ -49,4 +49,5 @@
     <string name="titulo_activity_modificar_producto">Modify Product Data</string>
     <string name="titulo_activity_product_management">Management</string>
     <string name="ventas_producto">Sales Product:</string>
+    <string name="agregado">Product added correctly</string>
 </resources>
